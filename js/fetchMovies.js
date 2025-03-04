@@ -8,7 +8,7 @@ var drmLicenceUrl = "https://playlicense.mxplay.com/widevine/proxy?content_id="
 
 
 function getMovies(pageNo,language){
-    let api = 'https://api.mxplay.com/v1/web/detail/browseItem?&pageNum='+pageNo+'&pageSize=16&isCustomized=true&browseLangFilterIds='+language+'&type=1&userid=HOTSTAR%20RANDOM%20ID%20:%201f151757-0147-4261-9cf7-e1abf4cc58cf&platform=com.mxplay.mobile&content-languages=en';  
+    let api = 'https://api.mxplay.com/v1/web/detail/video?type=$type&id=$id&platform=com.mxplay.desktop&device-density=2&userid=30bb09af-733a-413b-b8b7-b10348ec2b3d&content-languages=hi,mr,pa,bn,en,ml,kn,gu,te,ta';  
       
     fetch(api)  
          .then(function(response){  
